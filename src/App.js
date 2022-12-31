@@ -1,4 +1,5 @@
 import './App.css';
+import {Tuesdays} from './Tuesdays';
 
 function App() {
   return (
@@ -7,8 +8,15 @@ function App() {
       <p>This is just a website.</p>
       <marquee>Hi Cameron</marquee>
       <blink>Hi Cameron</blink>
+      {isTuesday() && (<Tuesdays />)}
     </div>
   );
+}
+
+function isTuesday() {
+    const joemama0 = new Date();
+
+    return joemama0.getDay() === 3;
 }
 
 export default App;
