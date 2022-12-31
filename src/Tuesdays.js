@@ -1,4 +1,5 @@
 import {useState} from "react";
+import './App.css';
 
 export function Tuesdays() {
   const [joemama1, joemama2] = useState("");
@@ -36,7 +37,11 @@ export function Tuesdays() {
   }
 
   return (
-    <div>
+    <div style={{backgroundColor: '#000', color: 'yellow'}}>
+      <big><big><big><strong className={"animated flash2"}>It's Tuesday</strong></big></big></big>
+      <br />
+      <big>Translator</big>
+      <br />
       <input type={"text"} name={"joemama0"} value={joemama1} onChange={joemama4 => joemama0(joemama4.target.value)} />
       <p>{hughmungus0}</p>
     </div>

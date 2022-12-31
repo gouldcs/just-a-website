@@ -1,3 +1,77 @@
 .App {
   text-align: center;
 }
+
+ .animated {
+   background-image: #000;
+   background-repeat: no-repeat;
+   background-position: left top;
+   padding-top:95px;
+   margin-bottom:60px;
+   -webkit-animation-duration: .3s;
+   animation-duration: .3s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite;
+   -moz-animation-iteration-count: infinite;
+   -webkit-animation-iteration-count: infinite;
+   -o-animation-iteration-count: infinite;
+ }
+
+.animated2 {
+  background-image: #000;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top:95px;
+  margin-bottom:60px;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash2 {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash3 {
+  0%, 50%, 100% {
+    background-color: red;
+    color: aquamarine;
+  }
+  25%, 75% {
+    opacity: 1;
+    background-color: brown;
+    color: blue;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}
+
+.flash2 {
+  animation-name: flash2;
+}
+
+.flash3 {
+  animation-name: flash3;
+}
